@@ -3,6 +3,7 @@
 	<name>EndDevice_STM32f103</name>
 	<comment></comment>
 	<projects>
+		<project>EndDevice_STM32f103</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
