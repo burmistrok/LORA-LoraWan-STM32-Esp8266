@@ -1,0 +1,29 @@
+Added Component: Designator=D1(LQFP-48N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case"; Value = "48-LQFP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "helpURL"; Value = "https://www.st.com/en/microcontrollers-microprocessors/stm32l072cb.htmhttps://www.st.com/en/microcontrollers-microprocessors/stm32l072cb.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacture"; Value = "ST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Model"; Value = "STM32L072CBT6"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-7
+Added Pin To Net: NetName=NetD1_8 Pin=D1-8
+Added Pin To Net: NetName=NetD1_1 Pin=D1-9
+Added Pin To Net: NetName=NSS Pin=D1-14
+Added Pin To Net: NetName=SCK Pin=D1-15
+Added Pin To Net: NetName=MISO Pin=D1-16
+Added Pin To Net: NetName=MOSI Pin=D1-17
+Added Pin To Net: NetName=RESET Pin=D1-18
+Added Pin To Net: NetName=NetD1_8 Pin=D1-23
+Added Pin To Net: NetName=NetD1_1 Pin=D1-24
+Added Pin To Net: NetName=DIO0 Pin=D1-29
+Added Pin To Net: NetName=DIO1 Pin=D1-30
+Added Pin To Net: NetName=DIO2 Pin=D1-31
+Added Pin To Net: NetName=DIO3 Pin=D1-32
+Added Pin To Net: NetName=DIO4 Pin=D1-33
+Added Pin To Net: NetName=NetD1_8 Pin=D1-35
+Added Pin To Net: NetName=NetD1_1 Pin=D1-36
+Added Pin To Net: NetName=DIO5 Pin=D1-38
+Added Pin To Net: NetName=NetD1_8 Pin=D1-44
+Added Pin To Net: NetName=NetD1_8 Pin=D1-47
+Added Pin To Net: NetName=NetD1_1 Pin=D1-48
+Added Member To Class: ClassName=Sheet1 Member=Component D1 STM32L072CBT6

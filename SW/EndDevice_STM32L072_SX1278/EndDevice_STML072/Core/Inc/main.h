@@ -28,8 +28,9 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32l0xx_ll_crs.h"
+#include "stm32l0xx_ll_lpuart.h"
 #include "stm32l0xx_ll_rcc.h"
+#include "stm32l0xx_ll_crs.h"
 #include "stm32l0xx_ll_bus.h"
 #include "stm32l0xx_ll_system.h"
 #include "stm32l0xx_ll_exti.h"
@@ -38,7 +39,6 @@ extern "C" {
 #include "stm32l0xx_ll_pwr.h"
 #include "stm32l0xx_ll_dma.h"
 #include "stm32l0xx_ll_spi.h"
-#include "stm32l0xx_ll_usart.h"
 #include "stm32l0xx.h"
 #include "stm32l0xx_ll_gpio.h"
 
@@ -74,6 +74,32 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define POWER_EN_Pin LL_GPIO_PIN_0
+#define POWER_EN_GPIO_Port GPIOA
+#define CMD_DE_Pin LL_GPIO_PIN_1
+#define CMD_DE_GPIO_Port GPIOA
+#define SPI_CS_Pin LL_GPIO_PIN_4
+#define SPI_CS_GPIO_Port GPIOA
+#define SX_DIO0_Pin LL_GPIO_PIN_0
+#define SX_DIO0_GPIO_Port GPIOB
+#define SX_DIO1_Pin LL_GPIO_PIN_1
+#define SX_DIO1_GPIO_Port GPIOB
+#define SX_DIO2_Pin LL_GPIO_PIN_2
+#define SX_DIO2_GPIO_Port GPIOB
+#define SX_DIO3_Pin LL_GPIO_PIN_10
+#define SX_DIO3_GPIO_Port GPIOB
+#define SX_DIO4_Pin LL_GPIO_PIN_11
+#define SX_DIO4_GPIO_Port GPIOB
+#define SX_DIO5_Pin LL_GPIO_PIN_12
+#define SX_DIO5_GPIO_Port GPIOB
+#define SX_RESET_Pin LL_GPIO_PIN_13
+#define SX_RESET_GPIO_Port GPIOB
+#define OPEN_CASE_Pin LL_GPIO_PIN_14
+#define OPEN_CASE_GPIO_Port GPIOB
+#define CMD_Setting_Pin LL_GPIO_PIN_15
+#define CMD_Setting_GPIO_Port GPIOB
+#define COUNTER_INP_Pin LL_GPIO_PIN_8
+#define COUNTER_INP_GPIO_Port GPIOA
 #ifndef NVIC_PRIORITYGROUP_0
 #define NVIC_PRIORITYGROUP_0         ((uint32_t)0x00000007) /*!< 0 bit  for pre-emption priority,
                                                                  4 bits for subpriority */

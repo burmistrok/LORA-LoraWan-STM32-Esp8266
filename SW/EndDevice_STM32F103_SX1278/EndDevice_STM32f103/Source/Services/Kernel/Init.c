@@ -15,6 +15,8 @@
 #include "HAL_USART.h"
 #include "spi.h"
 #include "HAL_SPI.h"
+#include "SX1278.h"
+#include "TheApp.h"
 
 /****************************************************************************************
  * Funtion:
@@ -33,7 +35,10 @@ void vInit(void)
 
 #ifdef USE_LED
 	vLed_Init((void*)MX_GPIO_Init);
+#else
+	MX_GPIO_Init();
 #endif
+
 
 #ifdef USE_USART
 	vUSART_Init((void*)MX_USART1_UART_Init);
@@ -41,6 +46,15 @@ void vInit(void)
 
 #ifdef USE_SPI
 	vSPI_Init((void*)MX_SPI1_Init);
+#endif
+
+#ifdef USE_SX1278
+	vSX1278_Init(NULL_PTR);
+#endif
+
+
+#ifdef USE_THEAPP
+	vTheApp_Init(NULL_PTR);
 #endif
 
 #ifdef USE_SCHM

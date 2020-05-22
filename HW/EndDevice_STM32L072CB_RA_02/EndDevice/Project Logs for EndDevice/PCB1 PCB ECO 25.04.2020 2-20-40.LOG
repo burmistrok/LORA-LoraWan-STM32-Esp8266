@@ -1,0 +1,15 @@
+Added Pin To Net: NetName=RESET Pin=D1-18
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-7
+Added Pin To Net: NetName=NetD1_1 Pin=D1-9
+Added Pin To Net: NetName=NetD1_1 Pin=D1-24
+Added Pin To Net: NetName=NetD1_1 Pin=D1-36
+Added Pin To Net: NetName=NetD1_1 Pin=D1-48
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD1_8 Pin=D1-8
+Added Pin To Net: NetName=NetD1_8 Pin=D1-23
+Added Pin To Net: NetName=NetD1_8 Pin=D1-35
+Added Pin To Net: NetName=NetD1_8 Pin=D1-44
+Added Pin To Net: NetName=NetD1_8 Pin=D1-47
+Added Net: Name=NetD1_8
+Added Room: Name=Sheet1

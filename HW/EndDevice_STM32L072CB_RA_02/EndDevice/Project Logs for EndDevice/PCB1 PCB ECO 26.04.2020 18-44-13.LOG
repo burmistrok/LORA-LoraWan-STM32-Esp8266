@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=UART_RE Pin=D2-11
+Added Pin To Net: NetName=UART_RE Pin=D2-38

@@ -20,7 +20,9 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32F1xx_HAL_Driver/Src \
+Source/App/TheApp \
 Source/Cdd/Led \
+Source/Cdd/SX1278 \
 Source/Peripherals/HAL_SPI \
 Source/Peripherals/HAL_USART \
 Source/Services/Kernel \

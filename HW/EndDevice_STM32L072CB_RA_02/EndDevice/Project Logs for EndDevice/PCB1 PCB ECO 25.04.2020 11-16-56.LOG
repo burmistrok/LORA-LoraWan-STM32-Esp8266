@@ -1,0 +1,16 @@
+Added Component: Designator=XS1(Conector)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case"; Value = "Terminal Bloak"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "helpURL"; Value = "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1776275-4/A98038-ND/1826901"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacture"; Value = "	TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Model"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "1776275-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_8 Pin=D2-1
+Added Pin To Net: NetName=NetD1_8 Pin=D2-2
+Added Pin To Net: NetName=NetD1_8 Pin=D2-9
+Added Pin To Net: NetName=NetD1_8 Pin=D2-16
+Added Pin To Net: NetName=NetD1_8 Pin=XS1-1
+Change Net Name : Old Net Name=NetD1_8 New Net Name=GND
+Added Member To Class: ClassName=Sheet1 Member=Component XS1 *
+Added Room: Name=Sheet1

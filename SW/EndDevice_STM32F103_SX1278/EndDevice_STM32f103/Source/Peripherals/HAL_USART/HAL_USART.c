@@ -9,8 +9,8 @@
 #include "HAL_USART.h"
 #include "CircularFIFOBuffer.h"
 
-#define SET_RTS()	GPIOA->ODR |= GPIO_ODR_ODR12
-#define RESET_RTS()	GPIOA->ODR &= ~GPIO_ODR_ODR12
+#define SET_RTS()	GPIOB->ODR |= GPIO_ODR_ODR5
+#define RESET_RTS()	GPIOB->ODR &= ~GPIO_ODR_ODR5
 
 
 static bool bUSARTInit = false;
@@ -58,8 +58,8 @@ void vUSART_DeInit(void)
 void vUSART_MainFunction(void)
 {
 
-	uint16_t u16_len;
-	uint8_t tmp_Buffer[BUFFER_SIZE];
+	//uint16_t u16_len;
+	//uint8_t tmp_Buffer[BUFFER_SIZE];
 
 	if ( bUSARTInit == false)
 	{
@@ -68,12 +68,12 @@ void vUSART_MainFunction(void)
 	else
 	{
 		//HAL_USART_SendBuffer(USART1, (uint8_t*)&"URA\r\n", 5, &u16_len);
-		HAL_USART_ReceiveBuffer(USART1, &tmp_Buffer[0], BUFFER_SIZE, &u16_len);
-		if (u16_len != 0u)
-		{
-			HAL_USART_SendBuffer(USART1, &tmp_Buffer[0], u16_len, &u16_len);
+		//HAL_USART_ReceiveBuffer(USART1, &tmp_Buffer[0], BUFFER_SIZE, &u16_len);
+		//if (u16_len != 0u)
+		//{
+			//HAL_USART_SendBuffer(USART1, &tmp_Buffer[0], u16_len, &u16_len);
 
-		}
+		//}
 
 	}
 
@@ -121,11 +121,11 @@ static void vLL_USART_Init(void)
 	LL_USART_EnableIT_RXNE(USART1);
 
 	//Enable clock for GPIOA
-	RCC->APB2ENR |=  RCC_APB2ENR_IOPAEN;
+	RCC->APB2ENR |=  RCC_APB2ENR_IOPBEN;
 
 	//Configured PIN
-	GPIOA->CRH &= ~GPIO_CRH_CNF12;
-	GPIOA->CRH |= GPIO_CRH_MODE12;
+	GPIOB->CRL &= ~GPIO_CRL_CNF5;
+	GPIOB->CRL |= GPIO_CRL_MODE5;
 }
 
 

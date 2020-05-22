@@ -1,0 +1,14 @@
+Change Component Designator: OldDesignator=C8 NewDesignator=C9
+Change Component Designator: OldDesignator=C9 NewDesignator=C10
+Change Component Designator: OldDesignator=C10 NewDesignator=C11
+Added Component: Designator=C8(CAPC1608X87N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "helpURL"; Value = "https://eu.mouser.com/ProductDetail/Murata-Electronics/GCJ188R71C104MA01D?qs=sGAEpiMZZMs0AnBnWHyRQID2xuQsFd1GofHLF%2FZjZNHccNCeYysMBg%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacture"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Model"; Value = "GCJ188R71C104MA01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Change Net Name : Old Net Name=NetC8_2 New Net Name=NetC9_2
+Added Member To Class: ClassName=Sheet1 Member=Component C11 100nF

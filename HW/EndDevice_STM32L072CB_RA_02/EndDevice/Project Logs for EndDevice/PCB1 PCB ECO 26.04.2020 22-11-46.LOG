@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=UART_RE Pin=D2-38
+Removed Pin From Net: NetName=START_SETTING Pin=D2-39
+Removed Pin From Net: NetName=COUNTER Pin=D2-40
+Removed Pin From Net: NetName=RS_485_PWR_EN Pin=D2-41
+Added Pin To Net: NetName=RS_485_PWR_EN Pin=D2-38
+Added Pin To Net: NetName=UART_RE Pin=D2-41
+Added Pin To Net: NetName=START_SETTING Pin=D2-45
+Added Pin To Net: NetName=COUNTER Pin=D2-46

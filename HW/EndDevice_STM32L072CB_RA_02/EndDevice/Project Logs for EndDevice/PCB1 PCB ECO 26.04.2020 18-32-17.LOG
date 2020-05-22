@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=SX127x_DIO0 Pin=D2-29
+Removed Pin From Net: NetName=SX127x_DIO1 Pin=D2-30
+Removed Pin From Net: NetName=SX127x_DIO2 Pin=D2-31
+Removed Pin From Net: NetName=SX127x_DIO3 Pin=D2-32
+Removed Pin From Net: NetName=SX127x_DIO4 Pin=D2-33
+Removed Pin From Net: NetName=SX127x_DIO5 Pin=D2-38
+Added Pin To Net: NetName=SX127x_DIO5 Pin=D2-21
+Added Pin To Net: NetName=SX127x_DIO4 Pin=D2-22
+Added Pin To Net: NetName=SX127x_DIO0 Pin=D2-25
+Added Pin To Net: NetName=SX127x_DIO1 Pin=D2-26
+Added Pin To Net: NetName=SX127x_DIO2 Pin=D2-27
+Added Pin To Net: NetName=SX127x_DIO3 Pin=D2-28
+Change Net Name : Old Net Name=NetC1_1 New Net Name=Vbat

@@ -10,8 +10,8 @@
 #include "CircularFIFOBuffer.h"
 
 
-#define SET_CS()	GPIOA->ODR &= ~GPIO_ODR_ODR4
-#define RESET_CS()	GPIOA->ODR |= GPIO_ODR_ODR4
+#define SET_CS()	GPIOB->ODR &= ~GPIO_ODR_ODR0
+#define RESET_CS()	GPIOB->ODR |= GPIO_ODR_ODR0
 
 static bool bSPIInit = false;
 volatile static bool vReceiveData = false;
@@ -77,18 +77,18 @@ void vSPI_MainFunction(void)
 
 static void vLL_SPI_Init(void)
 {
-	LL_SPI_EnableIT_TXE(SPI1);
-	LL_SPI_EnableIT_RXNE(SPI1);
-	LL_SPI_EnableIT_ERR(SPI1);
+	//LL_SPI_EnableIT_TXE(SPI1);
+	//LL_SPI_EnableIT_RXNE(SPI1);
+	//LL_SPI_EnableIT_ERR(SPI1);
 	LL_SPI_Enable(SPI1);
 
 	//Enable clock for GPIOA
-	RCC->APB2ENR |=  RCC_APB2ENR_IOPAEN;
+	RCC->APB2ENR |=  RCC_APB2ENR_IOPBEN;
 
 	//Configured PIN
-	SET_CS();
-	GPIOA->CRL &= ~GPIO_CRL_CNF4;
-	GPIOA->CRL |= GPIO_CRL_MODE4;
+	RESET_CS();
+	GPIOB->CRL &= ~GPIO_CRL_CNF0;
+	GPIOB->CRL |= GPIO_CRL_MODE0;
 }
 
 
@@ -104,7 +104,6 @@ void vSPI_IT_CallBack(void)
 			if (LL_SPI_IsEnabledIT_TXE(SPI1))
 			{
 				LL_SPI_DisableIT_TXE(SPI1);
-				//RESET_CS();
 			}
 		}
 		else
@@ -124,18 +123,63 @@ void vSPI_IT_CallBack(void)
 		else
 		{
 			LL_SPI_ReceiveData8(SPI1);
-			//RESET_CS();
 		}
 
 	}
 
 	if(LL_SPI_IsActiveFlag_OVR(SPI1))
 	{
+
 		LL_SPI_ReceiveData8(SPI1);
+		LL_SPI_IsActiveFlag_OVR(SPI1);
 	}
 }
 
+
 TE_ERROR HAL_SPI_SendChar(TS_SPI* SPIx, uint8_t Data)
+{
+	uint16_t u16_TimeOut;
+	if (LL_SPI_IsActiveFlag_TXE(SPIx))
+	{
+		LL_SPI_TransmitData8(SPI1, Data);
+		for (u16_TimeOut = 0u; u16_TimeOut <= 100u; u16_TimeOut++)
+		{
+			if (LL_SPI_IsActiveFlag_RXNE(SPIx))
+			{
+				LL_SPI_ReceiveData8(SPIx);
+				return ERR_OK;
+			}
+		}
+		return ERR_TIMEOUT;
+	}
+	return ERR_BUFFER_FULL;
+}
+
+TE_ERROR HAL_SPI_SendRecieveChar(TS_SPI* SPIx, uint8_t SData, uint8_t* RData)
+{
+	uint16_t u16_TimeOut;
+	if (LL_SPI_IsActiveFlag_TXE(SPIx))
+	{
+		LL_SPI_TransmitData8(SPI1, SData);
+		for (u16_TimeOut = 0u; u16_TimeOut <= 100u; u16_TimeOut++)
+		{
+			if (LL_SPI_IsActiveFlag_RXNE(SPIx))
+			{
+				*RData = LL_SPI_ReceiveData8(SPIx);
+				return ERR_OK;
+			}
+		}
+		return ERR_TIMEOUT;
+	}
+	return ERR_BUFFER_FULL;
+}
+
+
+
+
+
+
+TE_ERROR HAL_SPI_IT_SendChar(TS_SPI* SPIx, uint8_t Data)
 {
 	//SET_CS();
 	if (bCircularFIFOBuffer_addElement(&TX_Buffer, Data) == true )
@@ -151,12 +195,11 @@ TE_ERROR HAL_SPI_SendChar(TS_SPI* SPIx, uint8_t Data)
 		return ERR_BUFFER_FULL;
 	}
 }
-TE_ERROR HAL_SPI_SendRecieveChar(TS_SPI* SPIx, uint8_t SData, uint8_t* RData)
+TE_ERROR HAL_SPI_IT_SendRecieveChar(TS_SPI* SPIx, uint8_t SData, uint8_t* RData)
 {
 	uint8_t u8_Data = 0;
 	uint16_t u16_TimeOut;
 	vReceiveData = true;
-	//SET_CS();
 	if (bCircularFIFOBuffer_addElement(&TX_Buffer, SData) == true )
 	{
 		if ( !LL_SPI_IsEnabledIT_TXE(SPI1)  )
@@ -184,7 +227,7 @@ TE_ERROR HAL_SPI_SendRecieveChar(TS_SPI* SPIx, uint8_t SData, uint8_t* RData)
 
 
 
-TE_ERROR HAL_SPI_ReceiveBuffer(TS_SPI* SPIx, uint8_t* Data, uint16_t Len, uint16_t* RecievedLen)
+TE_ERROR HAL_SPI_IT_ReceiveBuffer(TS_SPI* SPIx, uint8_t* Data, uint16_t Len, uint16_t* RecievedLen)
 {
 	uint16_t u16_Len = 0u;
 	*RecievedLen = 0u;
@@ -206,11 +249,10 @@ TE_ERROR HAL_SPI_ReceiveBuffer(TS_SPI* SPIx, uint8_t* Data, uint16_t Len, uint16
 	return ERR_OK;
 }
 
-void vHAL_SPI_SendRequestToReceive(TS_SPI* SPIx, uint16_t Len)
+void vHAL_SPI_IT_SendRequestToReceive(TS_SPI* SPIx, uint16_t Len)
 {
 	uint16_t u16_Len = 0u;
 	vReceiveData = true;
-	//SET_CS();
 	while (Len > u16_Len)
 	{
 		u16_Len++;
@@ -224,3 +266,43 @@ void vHAL_SPI_SendRequestToReceive(TS_SPI* SPIx, uint16_t Len)
 		LL_SPI_EnableIT_TXE(SPI1);
 	}
 }
+
+
+
+void vSPI_SetCS(uint8_t Chip)
+{
+
+
+#if 0
+	switch(Chip)
+	{
+
+
+	default:
+		SET_CS();
+	}
+
+#else
+	SET_CS();
+
+#endif
+}
+
+void vSPI_ResetCS(uint8_t Chip)
+{
+
+#if 0
+	switch(Chip)
+	{
+
+
+	default:
+		RESET_CS();
+	}
+
+#else
+	RESET_CS();
+#endif
+}
+
+
