@@ -1,0 +1,12 @@
+Added Component: Designator=R24(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "helpURL"; Value = "https://eu.mouser.com/ProductDetail/Vishay-Dale/CRCW060310M0JNEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWqGwkA21tjII%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacture"; Value = "Vishay / Dale"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Model"; Value = "CRCW060310M0JNEAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10M"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=R24-2
+Added Pin To Net: NetName=BOOT1 Pin=D2-20
+Added Pin To Net: NetName=BOOT1 Pin=R24-1
+Added Net: Name=BOOT1
+Added Member To Class: ClassName=Sheet1 Member=Component R24 10M

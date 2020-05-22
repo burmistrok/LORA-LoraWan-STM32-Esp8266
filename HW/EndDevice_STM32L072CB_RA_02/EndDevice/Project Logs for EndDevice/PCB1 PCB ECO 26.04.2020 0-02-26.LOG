@@ -1,0 +1,30 @@
+Change Component Designator: OldDesignator=XS1 NewDesignator=S2
+Added Component: Designator=D1(SOD2512X110N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/NSVR0320MW2T1G.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "NSVR0320MW2T1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S1(FSMRA6JH)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825027&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1-1825027-7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "7.01mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FSMRA6JH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=COUNTER Pin=S1-2
+Added Pin To Net: NetName=COUNTER Pin=S1-MH1
+Added Pin To Net: NetName=COUNTER Pin=S1-MH2
+Added Member To Class: ClassName=Sheet1 Member=Component C2 22pF
+Added Member To Class: ClassName=Sheet1 Member=Component D1 NSVR0320MW2T1G
+Added Member To Class: ClassName=Sheet1 Member=Component D2 STM32L072CBT6
+Added Member To Class: ClassName=Sheet1 Member=Component R1 *
+Added Member To Class: ClassName=Sheet1 Member=Component R2 *
+Added Member To Class: ClassName=Sheet1 Member=Component R3 *
+Added Member To Class: ClassName=Sheet1 Member=Component R4 *
+Added Member To Class: ClassName=Sheet1 Member=Component S1 FSMRA6JH

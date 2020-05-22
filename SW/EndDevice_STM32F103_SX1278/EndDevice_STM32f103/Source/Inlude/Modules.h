@@ -10,9 +10,12 @@
 
 #define USE_SYS
 #define USE_SCHM
-#define USE_LED
+//#define USE_LED
 #define USE_USART
 #define USE_SPI
+#define USE_SX1278
+#define USE_THEAPP
+
 
 
 #endif /* INLUDE_MODULES_H_ */

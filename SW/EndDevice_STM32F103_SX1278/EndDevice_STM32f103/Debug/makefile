@@ -14,7 +14,9 @@ RM := rm -rf
 -include Source/Services/Kernel/subdir.mk
 -include Source/Peripherals/HAL_USART/subdir.mk
 -include Source/Peripherals/HAL_SPI/subdir.mk
+-include Source/Cdd/SX1278/subdir.mk
 -include Source/Cdd/Led/subdir.mk
+-include Source/App/TheApp/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

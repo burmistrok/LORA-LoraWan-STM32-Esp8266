@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=OPEN_CASE Pin=D2-2
+Removed Pin From Net: NetName=WKUP1 Pin=D2-10
+Added Pin To Net: NetName=WKUP1 Pin=D2-2
+Added Pin To Net: NetName=OPEN_CASE Pin=D2-10
+Added Room: Name=Sheet1

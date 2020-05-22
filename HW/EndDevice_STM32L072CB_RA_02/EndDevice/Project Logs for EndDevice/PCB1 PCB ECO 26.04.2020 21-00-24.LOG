@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SX127x_DIO5 Pin=D2-13
+Removed Pin From Net: NetName=SX127x_DIO4 Pin=D2-14
+Added Pin To Net: NetName=SX127x_DIO4 Pin=D2-13
+Added Pin To Net: NetName=SX127x_DIO5 Pin=D2-14

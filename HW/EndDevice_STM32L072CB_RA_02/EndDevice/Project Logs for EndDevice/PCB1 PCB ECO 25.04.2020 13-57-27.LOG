@@ -1,0 +1,10 @@
+Added Component: Designator=L1(1239ASH100MP2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "helpURL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacture"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDA1_1 Pin=DA1-1
+Added Pin To Net: NetName=NetDA1_1 Pin=L1-2
+Added Net: Name=NetDA1_1
+Added Member To Class: ClassName=Sheet1 Member=Component L1 *
+Added Room: Name=Sheet1

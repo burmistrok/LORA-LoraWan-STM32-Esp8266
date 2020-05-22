@@ -16,13 +16,21 @@ void vSPI_DeInit		(void);
 void vSPI_MainFunction	(void);
 void vSPI_IT_CallBack	(void);
 
+void vSPI_SetCS(uint8_t Chip);
+void vSPI_ResetCS(uint8_t Chip);
+
 TE_ERROR HAL_SPI_SendChar(TS_SPI* SPIx, uint8_t Data);
 
 TE_ERROR HAL_SPI_SendRecieveChar(TS_SPI* SPIx, uint8_t SData, uint8_t* RData);
 
-void vHAL_SPI_SendRequestToReceive(TS_SPI* SPIx, uint16_t Len);
 
-TE_ERROR HAL_SPI_ReceiveBuffer(TS_SPI* SPIx, uint8_t* Data, uint16_t Len, uint16_t* RecievedLen);
+TE_ERROR HAL_SPI_IT_SendChar(TS_SPI* SPIx, uint8_t Data);
+
+TE_ERROR HAL_SPI_IT_SendRecieveChar(TS_SPI* SPIx, uint8_t SData, uint8_t* RData);
+
+void vHAL_SPI_IT_SendRequestToReceive(TS_SPI* SPIx, uint16_t Len);
+
+TE_ERROR HAL_SPI_IT_ReceiveBuffer(TS_SPI* SPIx, uint8_t* Data, uint16_t Len, uint16_t* RecievedLen);
 
 
 #endif /* PERIPHERALS_HAL_SPI_HAL_SPI_H_ */

@@ -1,0 +1,16 @@
+Conversion Report:
+Created by DWG TrueView DWG Convert 29 апреля 2020 г., 20:36.
+
+Conversion Summary
+------------------
+Conversion File Format:  AutoCAD 2007/LT 2007 Drawing Format
+Conversion package type: In-place (overwrite files)
+Converted DWG files:     1
+Recovered DWG files:     0
+Conversion errors:       0
+
+
+Converted Files
+---------------
+Root Drawings:
+	D:\oleg\scris\utm\Proiect_de_diploma\Repositorie\LORA-LoraWan-STM32-Esp8266\HW\PCB1.DWG

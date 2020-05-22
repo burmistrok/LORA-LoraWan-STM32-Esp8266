@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=GND Pin=R13-1
+Removed Pin From Net: NetName=NetDA1_6 Pin=R13-2
+Change Component Comment : Designator=C3 Old Comment=18pF New Comment=9pF
+Change Component Comment : Designator=C4 Old Comment=18pF New Comment=9pF
+Change component parameters: Designator = "DA1"; Footprint = "SOT65P210X110-6N"; UniqueID = "\QOUFITIJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.ti.com/lit/gpn/TPS61222"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TPS61222DCKR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = "595-TPS61222DCKR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TPS61222DCKR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3"; Footprint = "CAPC1608X87N"; UniqueID = "\BCXVGIPK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "case"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.87mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "helpURL"; Value = "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1885C1H9R0DA01D?qs=sGAEpiMZZMs0AnBnWHyRQOYRcarA5hN2DPY65XhHy0U%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GRM1885C1H9R0DA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Model"; Value = "GRM1885C1H9R0DA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "9pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4"; Footprint = "CAPC1608X87N"; UniqueID = "\DUVJKKIH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "case"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.87mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "helpURL"; Value = "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1885C1H9R0DA01D?qs=sGAEpiMZZMs0AnBnWHyRQOYRcarA5hN2DPY65XhHy0U%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GRM1885C1H9R0DA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Model"; Value = "GRM1885C1H9R0DA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "9pF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=DA1-1
+Added Pin To Net: NetName=NetDA1_6 Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R13-2
+Change Net Name : Old Net Name=RS_485_PWR_EN New Net Name=COM_PWR_EN
+Added Pin To Net: NetName=NetDA1_5 Pin=DA1-5
+Added Pin To Net: NetName=NetDA1_5 Pin=L1-2
+Added Net: Name=NetDA1_5
+Added Member To Class: ClassName=Sheet1 Member=Component D1 STM32L072CBT6

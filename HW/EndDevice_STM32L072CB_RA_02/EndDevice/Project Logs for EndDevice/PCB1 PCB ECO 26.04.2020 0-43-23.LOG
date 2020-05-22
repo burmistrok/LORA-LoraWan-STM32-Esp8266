@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=COUNTER Pin=S1-2
+Removed Pin From Net: NetName=COUNTER Pin=S1-MH1
+Removed Pin From Net: NetName=COUNTER Pin=S1-MH2
+Change component parameters: Designator = "S1"; Footprint = "FSMRA6JH"; UniqueID = "\YNGULUGK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Height"; Value = "7.01mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "helpURL"; Value = "https://eu.mouser.com/ProductDetail/TE-Connectivity-PB/FSMRA6JH?qs=sGAEpiMZZMsgGjVA3toVBAK0o4DxfcqiZ%2FRlJR1iziM%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FSMRA6JH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=S1-MH1
+Added Pin To Net: NetName=GND Pin=S1-MH2
+Added Member To Class: ClassName=Sheet1 Member=Component C2 22pF
+Added Member To Class: ClassName=Sheet1 Member=Component D1 NSVR0320MW2T1G
+Added Member To Class: ClassName=Sheet1 Member=Component D2 STM32L072CBT6
+Added Member To Class: ClassName=Sheet1 Member=Component D3 SX1278
+Added Member To Class: ClassName=Sheet1 Member=Component R1 *
+Added Member To Class: ClassName=Sheet1 Member=Component R2 *
+Added Member To Class: ClassName=Sheet1 Member=Component R3 *
+Added Member To Class: ClassName=Sheet1 Member=Component R4 *
+Added Room: Name=Sheet1

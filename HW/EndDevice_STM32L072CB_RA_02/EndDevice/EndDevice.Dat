@@ -1,0 +1,54 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Manufacturer_Part_Number~String~Manufacturer_Part_Number~100|Field=Model~String~Model~100|Field=Quantity~Integer~Quantity~100|Field=Value~String~Value~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~EndDevice.PrjPcb|ReportField=ProjectFullPath~D:\oleg\scris\utm\Proiect_de_diploma\Repositorie\LORA-LoraWan-STM32-Esp8266\HW\EndDevice_STM32L072CB_RA_02\EndDevice\EndDevice.PrjPcb|ReportField=Title~Bill of Materials For Project [EndDevice.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~53|ReportField=ReportTime~21:29:51|ReportField=ReportDate~29.04.2020|ReportField=ReportDateTime~29.04.2020 21:29:51|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~29.04.2020|ReportField=CurrentTime~21:27:08|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\oleg\scris\utm\Proiect_de_diploma\Repositorie\LORA-LoraWan-STM32-Esp8266\HW\EndDevice_STM32L072CB_RA_02\EndDevice\Sheet1.SchDoc|ReportField=DocumentName~Sheet1.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~29.04.2020|ReportField=Organization~|ReportField=ProjectName~EndDevice.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~EndDevice.PrjPcb|ReportField=DataSourceFullPath~D:\oleg\scris\utm\Proiect_de_diploma\Repositorie\LORA-LoraWan-STM32-Esp8266\HW\EndDevice_STM32L072CB_RA_02\EndDevice\EndDevice.PrjPcb|ReportField=PCBConfigurationName~Sources|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|100nF||C1|CAPC1608X87N|Capacitor||GCJ188R71C104MA01D|1|100nF
+2|100nF||C2|CAPC1608X87N|Capacitor||GCJ188R71C104MA01D|1|100nF
+3|9pF|Capacitor|C3|CAPC1608X87N|C0603C220F3HACTU|GRM1885C1H9R0DA01D|GRM1885C1H9R0DA01D|1|9pF
+4|9pF|Capacitor|C4|CAPC1608X87N|C0603C220F3HACTU|GRM1885C1H9R0DA01D|GRM1885C1H9R0DA01D|1|9pF
+5|18pF|Capacitor|C5|CAPC1608X87N|C0603C220F3HACTU|C0603C220F3HACTU|C0603C220F3HACTU|1|18pF
+6|18pF|Capacitor|C6|CAPC1608X87N|C0603C220F3HACTU|C0603C220F3HACTU|C0603C220F3HACTU|1|18pF
+7|100nF||C7|CAPC1608X87N|Capacitor||GCJ188R71C104MA01D|1|100nF
+8|100nF||C8|CAPC1608X87N|Capacitor||GCJ188R71C104MA01D|1|100nF
+9|10uF|Capacitor|C9|CAPC1608X90N|GRM188R60J106ME84J|GRM188R60J106ME84J|GRM188R60J106ME84J|1|10uF
+10|10uF|Capacitor|C10|CAPC1608X90N|GRM188R60J106ME84J|GRM188R60J106ME84J|GRM188R60J106ME84J|1|10uF
+11|100nF||C11|CAPC1608X87N|Capacitor||GCJ188R71C104MA01D|1|100nF
+12|STM32L072CBT6|ARM Cortex M0+, 128 KB,  32 MHz|D1|LQFP-48N|STM32L072CBT6||STM32L072CBT6|1|
+13|SX1278|Wireless Modules RoHS, Lora, 433 MHz|D2|RA-02 Lora|SX1278||SX1278|1|
+14|ST485CDR|Integrated Circuit|D3|SOIC127P600X175-8N|ST485CDR|ST485CDR|ST485CDR|1|
+15|TPS61222DCKR|Integrated Circuit|DA1|SOT65P210X110-6N|TPS61222DCKR|TPS61222DCKR|TPS61222DCKR|1|
+16|SN74AUP1G08DBVR|Integrated Circuit|DD1|SOT95P280X145-5N|SN74AUP1G08DBVR|SN74AUP1G08DBVR|SN74AUP1G08DBVR|1|
+17|4.7uH||L1|1239ASH100MP2|Cooil||EPL3015-472MLB|1|4.7uH
+18|10M||R1|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+19|10M||R2|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+20|10M||R3|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+21|10M||R4|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+22|10M||R5|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+23|10M||R6|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+24|10M||R7|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+25|10M||R8|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+26|10M||R9|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+27|0||R10|R0603|Resistor||CRCW06030000Z0EAC|1|0
+28|10||R11|R0603|Resistor||CRCW060310R0FKEAC|1|10
+29|10M||R12|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+30|10M||R13|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+31|0||R14|R0603|Resistor||CRCW06030000Z0EAC|1|0
+32|47k||R15|R0603|Resistor||RC0603FR-0747KL|1|47k
+33|0||R16|R0603|Resistor||CRCW06030000Z0EAC|1|0
+34|10||R17|R0603|Resistor||CRCW060310R0FKEAC|1|10
+35|10||R18|R0603|Resistor||CRCW060310R0FKEAC|1|10
+36|10||R19|R0603|Resistor||CRCW060310R0FKEAC|1|10
+37|10||R20|R0603|Resistor||CRCW060310R0FKEAC|1|10
+38|10||R21|R0603|Resistor||CRCW060310R0FKEAC|1|10
+39|0||R22|R0603|Resistor||CRCW06030000Z0EAC|1|0
+40|47k||R23|R0603|Resistor||RC0603FR-0747KL|1|47k
+41|10M||R24|R0603|Resistor||CRCW060310M0JNEAC|1|10M
+42|PTS636_SL43_LFS|Switch|S1|PTS636SL43LFS|PTS636_SL43_LFS|PTS636 SL43 LFS|PTS636 SL43 LFS|1|
+43|FSMRA6JH|Switch|S2|FSMRA6JH|FSMRA6JH|FSMRA6JH|FSMRA6JH|1|
+44|NSVR0320MW2T1G|Diode|VD1|SOD2512X110N|NSVR0320MW2T1G|NSVR0320MW2T1G|NSVR0320MW2T1G|1|
+45|ESD9B5.0ST5G|Diode|VD2|SODFL1006X40N|ESD9B5.0ST5G|ESD9B5.0ST5G|ESD9B5.0ST5G|1|
+46|ESD9B5.0ST5G|Diode|VD3|SODFL1006X40N|ESD9B5.0ST5G|ESD9B5.0ST5G|ESD9B5.0ST5G|1|
+47|ESD9B5.0ST5G|Diode|VD4|SODFL1006X40N|ESD9B5.0ST5G|ESD9B5.0ST5G|ESD9B5.0ST5G|1|
+48|ESD9B5.0ST5G|Diode|VD5|SODFL1006X40N|ESD9B5.0ST5G|ESD9B5.0ST5G|ESD9B5.0ST5G|1|
+49|Value||X1|HDRV1W64P254_1X4_254X241X838P|Connector||1776275-4|1|
+50|Connector_2||X2|Pad_Connector_2|Connector_2|||1|
+51|||X3|Conector|Connector||1776275-4|1|
+52|8MHz|Crystal or Oscillator|ZQ1|ABM38000MHzD2YT|ABM3-8.000MHZ-B4Y-T|ABM3-8.000MHZ-B4Y-T|ABM3-8.000MHZ-B4Y-T|1|
+53|32.768k|Crystal or Oscillator|ZQ2|CM7VT1A32768kHz125pF10PPMTBQC|CM7V-T1A-32.768k-9pF-20PPM-TA-QA_T3|CM7V-T1A-32.768k-9pF-20PPM-TA-QA T3|CM7V-T1A-32.768k-9pF-20PPM-TA-QA T3|1|

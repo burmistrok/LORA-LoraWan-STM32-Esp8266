@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=SX127x_DIO5 Pin=D2-21
+Removed Pin From Net: NetName=SX127x_DIO4 Pin=D2-22
+Added Pin To Net: NetName=SX127x_DIO4 Pin=D2-21
+Added Pin To Net: NetName=SX127x_DIO5 Pin=D2-22
+Added Member To Class: ClassName=Sheet1 Member=Component D3 SX1278

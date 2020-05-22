@@ -10,6 +10,8 @@
 #include "Led.h"
 #include "HAL_USART.h"
 #include "HAL_SPI.h"
+#include "SX1278.h"
+#include "TheApp.h"
 
 
 /****************************************************************************************
@@ -31,7 +33,9 @@ void vSchM_IdleTask(void)
  */
 void vSchM_BaseRecurrenceTask	(void)
 {
+	vTheApp_MainFunction();
 	vLed_MainFunction();
+	vSX1278_MainFunction();
 
 }
 
